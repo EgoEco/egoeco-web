@@ -1,0 +1,41 @@
+{
+    "UserList": [
+        {
+            "order": 1,
+            "id": "nopaper",
+            "passoword": "1234",
+            "email": "asd@gmail.com",
+            "point": 200
+        },
+        {
+            "order": 2,
+            "id": "CHOCO",
+            "passoword": "1234",
+            "email": "asd@gmail.com",
+            "point": 300
+        },
+        {
+            "order": 3,
+            "id": "Boom-Boom",
+            "passoword": "1234",
+            "email": "asd@gmail.com",
+            "point": 180
+        },
+        {
+            "order": 4,
+            "id": "Cat Cat",
+            "passoword": "1234",
+            "email": "asd@gmail.com",
+            "point": 700
+        },
+        {
+            "order": 5,
+            "id": "Funny DIY",
+            "passoword": "1234",
+            "email": "asd@gmail.com",
+            "point": 80
+        }
+    ]
+}
+
+

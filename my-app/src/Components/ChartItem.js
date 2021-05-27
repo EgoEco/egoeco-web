@@ -8,7 +8,7 @@ const HotChartElement = styled.div`
     justify-content: start;
     margin-right: 20px;
     width: 200px;
-    height: 350px;
+    height: 320px;
 `;
 
 const LabelOrder = styled.div`
@@ -31,7 +31,7 @@ const Label = styled.img`
 const Image = styled.img`
     position: relative;
     border: 1px solid #c9c9c9;
-    width: 200px;
+    width: 195px;
     z-index: 0;
 `;
 
@@ -48,10 +48,10 @@ const Author = styled.div`
     opacity: 0.5;
 `;
 
-function HotChart(props) {
+function ChartItem(props) {
     const imgPath = "images/a" + props.order + ".png";
     let labelPath;
-    if(props.order === "1"){
+    if(props.order === 1){
         labelPath = "images/label1.png";
     } else {
         labelPath = "images/label2.png";
@@ -67,4 +67,4 @@ function HotChart(props) {
     );
 }
 
-export default HotChart;
+export default ChartItem;

@@ -8,7 +8,7 @@ const HeaderContainer = styled.header`
   justify-content: space-around;
   width: 100vw;
   height: 80px;
-  border-bottom: 3px solid slategrey;
+  border-bottom: 3px solid #b5b5b5;
 `;
 
 const HeaderColumn = styled.div`
@@ -17,14 +17,14 @@ const HeaderColumn = styled.div`
   align-content: center;
   justify-content: space-between;
   &:first-child{
-    width: 70vw;
+    width: 60vw;
     padding-top: 25px;
     justify-content: start;
     font-size: 30px;
     font-weight: 800;
   }
   &:last-child{
-    width: 45vw;
+    width: 40vw;
     font-size: 20px;
   }
 `;

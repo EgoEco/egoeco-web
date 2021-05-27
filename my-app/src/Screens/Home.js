@@ -1,6 +1,9 @@
 import React from 'react';
 import styled from "styled-components";
-import HotChart from "../Components/HotChart";
+import ChartItem from "../Components/ChartItem";
+import ShopChart from "../Components/Chart/ShopChart";
+import UserChart from "../Components/Chart/UserChart";
+
 
 const Container = styled.div`
   display: flex;
@@ -72,32 +75,8 @@ function Home(props) {
                     </p>
                 </Article>
             </Context>
-            <ListContext>
-                <Topic>EgoEco Point Item</Topic>
-                <HotNowList>
-                    <HotChart order="1" title="Funny DIY sentences(ENG)" author="nopaper"/>
-                    <HotChart order="2" title="HI CHOCO & CHICHI" author="STUDIO.MINIH"/>
-                    <HotChart order="3" title="Boom-Boom bear" author="KIHOKIHO"/>
-                    <HotChart order="4" title="Cat Cat Cat Cat" author="KIHOKIHO"/>
-                    <HotChart order="5" title="Funny DIY sentences(ENG)" author="nopaper"/>
-                    <HotChart order="6" title="HI CHOCO & CHICHI" author="STUDIO.MINIH"/>
-                    <HotChart order="7" title="Boom-Boom bear" author="KIHOKIHO"/>
-                    <HotChart order="8" title="Cat Cat Cat Cat" author="KIHOKIHO"/>
-                </HotNowList>
-            </ListContext>
-            <ListContext>
-                <Topic>EgoEco Rank User</Topic>
-                <HotNowList>
-                    <HotChart order="1" title="Funny DIY sentences(ENG)" author="nopaper"/>
-                    <HotChart order="2" title="HI CHOCO & CHICHI" author="STUDIO.MINIH"/>
-                    <HotChart order="3" title="Boom-Boom bear" author="KIHOKIHO"/>
-                    <HotChart order="4" title="Cat Cat Cat Cat" author="KIHOKIHO"/>
-                    <HotChart order="5" title="Funny DIY sentences(ENG)" author="nopaper"/>
-                    <HotChart order="6" title="HI CHOCO & CHICHI" author="STUDIO.MINIH"/>
-                    <HotChart order="7" title="Boom-Boom bear" author="KIHOKIHO"/>
-                    <HotChart order="8" title="Cat Cat Cat Cat" author="KIHOKIHO"/>
-                </HotNowList>
-            </ListContext>
+            <ShopChart />
+            <UserChart />
         </Container>
     );
 }

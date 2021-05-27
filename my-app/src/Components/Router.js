@@ -6,6 +6,7 @@ import News from '../Screens/News';
 import Shop from '../Screens/Shop';
 import Analysis from '../Screens/Analysis';
 import Header from './Header';
+import Footer from "./Footer";
 
 
 export default () => {
@@ -18,6 +19,7 @@ export default () => {
             <Route path={"/shop"} exact component={Shop} />
             <Route path={"/analysis"} exact component={Analysis} />
             <Redirect from={"*"} to={"/"}/>
+            <Footer />
         </Router>
     );
 };
