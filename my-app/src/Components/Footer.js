@@ -6,6 +6,9 @@ const FooterContainer = styled.header`
   align-content: center;
   justify-content: center;
   width: 100vw;
+  @media screen and (max-width: 700px) {
+    width: 700px;
+  }
   height: 150px;
   border-top: 4px solid #b5b5b5;
   background-color: #dbf0ee;
