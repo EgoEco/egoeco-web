@@ -125,7 +125,7 @@ const InputForm = styled.form`
   }
 `;
 
-class Login extends Component {
+class Join extends Component {
     render() {
         return (
             <Container>
@@ -138,15 +138,17 @@ class Login extends Component {
                             <label htmlFor="user_id" className="form__label">ID</label>
                         </div>
                         <div className="form__group field">
-                            <input type="password" className="form__field" placeholder="user_pw" name="user_pw" id='user_pw'
+                            <input type="password1" className="form__field" placeholder="user_pw1" name="user_pw1" id='user_pw1'
                                    required/>
-                            <label htmlFor="user_pw" className="form__label">PW</label>
+                            <label htmlFor="user_pw1" className="form__label">PW</label>
+                        </div>
+                        <div className="form__group field">
+                            <input type="password2" className="form__field" placeholder="user_pw2" name="user_pw2" id='user_pw2'
+                                   required/>
+                            <label htmlFor="user_pw2" className="form__label">REWRITE PW</label>
                         </div>
                         <div class={"btn__field"}>
                             <a href={"/"}>
-                                <button type="button" className="btn">login</button>
-                            </a>
-                            <a href={"/join"}>
                                 <button type="button" className="btn">join</button>
                             </a>
                         </div>
@@ -157,4 +159,4 @@ class Login extends Component {
     }
 }
 
-export default Login;
+export default Join;
