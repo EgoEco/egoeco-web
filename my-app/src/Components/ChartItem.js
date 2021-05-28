@@ -49,12 +49,12 @@ const Author = styled.div`
 `;
 
 function ChartItem(props) {
-    const imgPath = "images/a" + props.order + ".png";
+    const imgPath = "/images/a" + props.order + ".png";
     let labelPath;
     if(props.order === 1){
-        labelPath = "images/label1.png";
+        labelPath = "/images/label1.png";
     } else {
-        labelPath = "images/label2.png";
+        labelPath = "/images/label2.png";
     }
     return (
         <HotChartElement>

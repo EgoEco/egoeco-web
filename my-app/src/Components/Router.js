@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import { BrowserRouter as Router, Route, Redirect } from "react-router-dom";
+import React from 'react';
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import Home from '../Screens/Home';
 import Login from '../Screens/Login';
 import News from '../Screens/News';
@@ -8,6 +8,7 @@ import Analysis from '../Screens/Analysis';
 import Header from './Header';
 import Footer from "./Footer";
 import Join from "../Screens/Join";
+import ShopDetail from "../Screens/ShopDetail";
 
 
 export default () => {
@@ -19,6 +20,7 @@ export default () => {
             <Route path={"/join"} exact component={Join} />
             <Route path={"/news"} exact component={News} />
             <Route path={"/shop"} exact component={Shop} />
+            <Route path={"/shop/:id"} component={ShopDetail} />
             <Route path={"/analysis"} exact component={Analysis} />
             <Footer />
         </Router>

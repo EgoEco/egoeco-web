@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import styled from "styled-components";
 import axios from "axios";
 import ChartItem from "../Components/ChartItem";
-import { Link } from 'react-router-dom';
 
 const Container = styled.div`
   padding-left: 30px;
@@ -31,6 +30,28 @@ const HotNowList = styled.div`
     margin-bottom: 30px;
 `;
 
+const ItemContext = styled.div`
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+  line-height: 1.7;
+  font-weight: 500;
+  .btn {
+    color: #fff;
+    background-color: #b5b5b5;
+    outline: none;
+    border: 0;
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    border-radius: 2px;
+    cursor: pointer;
+    position: relative;
+    width: 100px;
+  }
+`;
+
 const GroupList = styled.div`
   width: 640px;
   display: flex;
@@ -40,11 +61,12 @@ const GroupList = styled.div`
   font-weight: 500;
 `;
 
-class Shop extends Component {
+class ShopDetail extends Component {
     constructor(props){
         super(props);
         this.state = {
-            ShopList : []
+            ShopList : [],
+            user : []
         };
     }
     componentDidMount(){
@@ -66,23 +88,29 @@ class Shop extends Component {
         return (
             <Container>
                 <ShopLayout>
-                    <Topic>Shop List</Topic>
+                    <Topic>Shop List : Item {this.props.match.params.id * 1 + 1}</Topic>
                     <HotNowList>
                         {this.state.ShopList.length > 0 ? (
-                            this.state.ShopList.map((list, index) => (
-                                <Link to={"/shop/" + index} id = {index + 1}>
-                                    <ChartItem
-                                        order={list.order}
-                                        title={list.title}
-                                        author={list.author}
-                                    />
-                                </Link>
-                            ))
+                            this.state.ShopList.map((list, index) => {
+                                console.log(this.props.match.params.id);
+                                if (list.order === this.props.match.params.id * 1 + 1) {
+                                    return <ChartItem order={list.order} title={list.title} author={list.author}/>;
+                                }
+                            })
                         ) : (
                             <span>
                             Error
                         </span>
                         )}
+                        <ItemContext>
+                            <div>물품 : ?</div>
+                            <div>설명 : ?</div>
+                            <div>지원 단체 : ?</div>
+                            <div>포인트 가격 : ?</div>
+                            <a href={"/"}>
+                                <button type="button" className="btn">구매하기</button>
+                            </a>
+                        </ItemContext>
                     </HotNowList>
                     <Topic>탄소 저감 포인트 지원 단체</Topic>
                     <GroupList>
@@ -95,4 +123,4 @@ class Shop extends Component {
     }
 }
 
-export default Shop;
+export default ShopDetail;
