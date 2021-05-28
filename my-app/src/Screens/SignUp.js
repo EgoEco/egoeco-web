@@ -125,7 +125,7 @@ const InputForm = styled.form`
   }
 `;
 
-class Join extends Component {
+class SignUp extends Component {
     render() {
         return (
             <Container>
@@ -159,4 +159,4 @@ class Join extends Component {
     }
 }
 
-export default Join;
+export default SignUp;

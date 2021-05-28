@@ -146,7 +146,7 @@ class Login extends Component {
                             <a href={"/"}>
                                 <button type="button" className="btn">login</button>
                             </a>
-                            <a href={"/join"}>
+                            <a href={"/signup"}>
                                 <button type="button" className="btn">join</button>
                             </a>
                         </div>
