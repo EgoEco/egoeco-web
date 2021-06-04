@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import axios from 'axios';
-import ChartItem from "../ChartItem";
+import UserItem from "../partial/UserItem";
 import styled from "styled-components";
 
 const Topic = styled.div`
@@ -57,10 +57,10 @@ class UserChart extends Component {
                 <HotNowList>
                     {this.state.UserList.length > 0 ? (
                         this.state.UserList.map(list => (
-                            <ChartItem
+                            <UserItem
                                 order={list.order}
                                 title={list.id}
-                                author={list.point}
+                                point={list.point}
                             />
                         ))
                     ) : (

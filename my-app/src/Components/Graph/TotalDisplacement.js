@@ -17,7 +17,7 @@ export default function TotalDisplacement() {
             height={360}
             data={data}
             margin={{
-                top: 0,
+                top: 20,
                 right: 20,
                 bottom: 20,
                 left: 0

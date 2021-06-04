@@ -18,6 +18,7 @@ const NewsContainer = styled.div`
   align-items: center;
   justify-content: start;
   flex-direction: column;
+  margin-bottom: 20px;
 `;
 
 const NewsArticle = styled.div`
@@ -25,7 +26,6 @@ const NewsArticle = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 20px;
 `;
 
 const NewsContext = styled.div`
@@ -68,7 +68,7 @@ function News(props) {
     return (
         <NewsLayout>
             <NewsContainer>
-                <Topic>자동차 등록 대수는 여전히 늘고 있어!</Topic>
+                <Topic>온실 가스 늘고 있지만, 자동차 등록 대수는 점점...? </Topic>
                 <NewsArticle>
                     <TotalCarChart />
                     <NewsContext>
@@ -80,6 +80,11 @@ function News(props) {
                         </p>
                     </NewsContext>
                 </NewsArticle>
+                <Source>
+                    <a href={"https://www.index.go.kr/potal/main/EachDtlPageDetail.do?idx_cd=1257"}>
+                        출처 : 국토 교통부 자동차 등록 현황
+                    </a>
+                </Source>
             </NewsContainer>
             <NewsContainer>
                 <Topic>에코 시스템이 연료 소비를 줄일 수 있다?</Topic>
@@ -115,6 +120,11 @@ function News(props) {
                         </p>
                     </NewsContext>
                 </NewsArticle>
+                <Source>
+                    <a href={"https://data.seoul.go.kr/dataList/10869/S/2/datasetView.do;jsessionid=C222A122F7C3FF43B492611B0B1F9C3C.new_portal-svr-21"}>
+                        출처 : 서울시 승용차의 배기량별 등록 현황 통계
+                    </a>
+                </Source>
             </NewsContainer>
         </NewsLayout>
     );

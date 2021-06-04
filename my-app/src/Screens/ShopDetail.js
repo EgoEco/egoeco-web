@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import styled from "styled-components";
 import axios from "axios";
-import ChartItem from "../Components/ChartItem";
+import ChartItem from "../Components/partial/ChartItem";
+import { PrepareItem } from "../Components/partial/BtnTimeToPrepare";
 
 const Container = styled.div`
   padding-left: 30px;
@@ -33,6 +34,7 @@ const HotNowList = styled.div`
 const ItemContext = styled.div`
   display: flex;
   flex-direction: column;
+  width: 400px;
   font-size: 25px;
   line-height: 1.7;
   font-weight: 500;
@@ -94,23 +96,43 @@ class ShopDetail extends Component {
                             this.state.ShopList.map((list, index) => {
                                 console.log(this.props.match.params.id);
                                 if (list.order === this.props.match.params.id * 1 + 1) {
-                                    return <ChartItem order={list.order} title={list.title} author={list.author}/>;
+                                    return (
+                                        <>
+                                            <ChartItem order={list.order} title={list.title} author={list.author}/>
+                                            <ItemContext>
+                                                <div>
+                                                    <a>
+                                                        <strong>물품 : </strong>{list.title}
+                                                    </a>
+                                                </div>
+                                                <div>
+                                                    <a>
+                                                        <strong>설명 : </strong>{list.description}
+                                                    </a>
+                                                </div>
+                                                <div>
+                                                    <a>
+                                                        <strong>지원 단체 : </strong>{list.author}
+                                                    </a>
+                                                </div>
+                                                <div>
+                                                    <a>
+                                                        <strong>포인트 가격 : </strong>{list.point}
+                                                    </a>
+                                                </div>
+                                                <a href={"/"} onClick={PrepareItem}>
+                                                    <button type="button" className="btn">구매하기</button>
+                                                </a>
+                                            </ItemContext>
+                                        </>
+                                    );
                                 }
                             })
                         ) : (
                             <span>
-                            Error
-                        </span>
+                                Error
+                            </span>
                         )}
-                        <ItemContext>
-                            <div>물품 : ?</div>
-                            <div>설명 : ?</div>
-                            <div>지원 단체 : ?</div>
-                            <div>포인트 가격 : ?</div>
-                            <a href={"/"}>
-                                <button type="button" className="btn">구매하기</button>
-                            </a>
-                        </ItemContext>
                     </HotNowList>
                     <Topic>탄소 저감 포인트 지원 단체</Topic>
                     <GroupList>

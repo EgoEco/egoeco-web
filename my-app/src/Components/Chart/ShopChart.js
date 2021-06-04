@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import axios from 'axios';
-import ChartItem from "../ChartItem";
+import ChartItem from "../partial/ChartItem";
 import styled from "styled-components";
+import {Link} from "react-router-dom";
 
 const Topic = styled.div`
     font-size: 30px;
@@ -56,12 +57,14 @@ class ShopChart extends Component {
                 <Topic>EgoEco Point Item</Topic>
                 <HotNowList>
                     {this.state.ShopList.length > 0 ? (
-                        this.state.ShopList.map(list => (
-                            <ChartItem
-                                order={list.order}
-                                title={list.title}
-                                author={list.author}
-                            />
+                        this.state.ShopList.map((list, index) => (
+                            <Link to={"/shop/" + index} id = {index + 1}>
+                                <ChartItem
+                                    order={list.order}
+                                    title={list.title}
+                                    author={list.author}
+                                />
+                            </Link>
                         ))
                     ) : (
                         <span>

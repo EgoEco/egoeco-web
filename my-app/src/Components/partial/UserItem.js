@@ -36,20 +36,20 @@ const Image = styled.img`
 `;
 
 const Title = styled.div`
-    font-size: 25px;
+    font-size: 24px;
     font-weight: 500;
     margin-bottom: 10px;
     line-height: 1.5;
 `;
 
-const Author = styled.div`
+const Point = styled.div`
     font-size: 20px;
     font-weight: 500;
     opacity: 0.5;
 `;
 
-function ChartItem(props) {
-    const imgPath = "/images/a" + props.order + ".png";
+function UserItem(props) {
+    const imgPath = "/images/profile/a" + props.order + ".png";
     let labelPath;
     if(props.order === 1){
         labelPath = "/images/label1.png";
@@ -62,9 +62,9 @@ function ChartItem(props) {
             <Label src={labelPath}></Label>
             <Image src={imgPath}></Image>
             <Title>{props.title}</Title>
-            <Author>{props.author}</Author>
+            <Point>total point: {props.point}</Point>
         </HotChartElement>
     );
 }
 
-export default ChartItem;
+export default UserItem;

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 
 import styled from "styled-components";
+import {PrepareLogin} from "../Components/partial/BtnTimeToPrepare";
 
 const Container = styled.div`
   width: 640px;
@@ -148,7 +149,7 @@ class SignUp extends Component {
                             <label htmlFor="user_pw2" className="form__label">REWRITE PW</label>
                         </div>
                         <div class={"btn__field"}>
-                            <a href={"/"}>
+                            <a href={"/"} onClick={PrepareLogin}>
                                 <button type="button" className="btn">join</button>
                             </a>
                         </div>

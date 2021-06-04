@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from "styled-components";
 import axios from "axios";
-import ChartItem from "../Components/ChartItem";
+import ChartItem from "../Components/partial/ChartItem";
 import { Link } from 'react-router-dom';
 
 const Container = styled.div`

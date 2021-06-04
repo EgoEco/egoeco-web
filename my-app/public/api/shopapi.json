@@ -2,43 +2,59 @@
     "ShopList": [
         {
             "order": 1,
-            "title": "Funny DIY sentences(ENG)",
-            "author": "nopaper"
+            "title": "1회 세차 교환권",
+            "description": "EgoEco에 협찬을 해준 세차장에 한해, 1회 세차를 할 수 있는 상품입니다.",
+            "author": "Team EcoEgo",
+            "point": 2000
         },
         {
             "order": 2,
-            "title": "HI CHOCO & CHICHI",
-            "author": "STUDIO.MINIH"
+            "title": "텀블러",
+            "description": "친환경 소재로 만든 텀블러 상품입니다.",
+            "author": "끝장개발대회",
+            "point": 300
         },
         {
             "order": 3,
-            "title": "Boom-Boom bear",
-            "author": "KIHOKIHO"
+            "title": "공영 주차장 1회 할인권",
+            "description": "공영 주차장 이용시, 해당 업체에 따라 주차 요금 할인을 할 수 있는 상품입니다.",
+            "author": "Team EcoEgo",
+            "point": 3000
         },
         {
             "order": 4,
-            "title": "Cat Cat Cat Cat",
-            "author": "KIHOKIHO"
+            "title": "차량 정기 검사 1회 교환권",
+            "description": "1년마다 꼭 해야 하는 차량 정기 검사를 1회 교환해주는 상품입니다.",
+            "author": "Team EcoEgo",
+            "point": 5000
         },
         {
             "order": 5,
-            "title": "Funny DIY sentences(ENG)",
-            "author": "nopaper"
+            "title": "미니 화분",
+            "description": "공기를 깨끗하게 하고 아주 예쁜 미니 화분입니다.",
+            "author": "Team EcoEgo",
+            "point": 200
         },
         {
             "order": 6,
-            "title": "HI CHOCO & CHICHI",
-            "author": "STUDIO.MINIH"
+            "title": "마스크 1회 교환권",
+            "description": "EgoEco에 협찬해준 마스크를 1회 교환해주는 상품입니다.",
+            "author": "Team EcoEgo",
+            "point": 100
         },
         {
             "order": 7,
-            "title": "Boom-Boom bear",
-            "author": "KIHOKIHO"
+            "title": "대나무 칫솔",
+            "description": "친환경 소재인 대나무로 만든 칫솔입니다.",
+            "author": "끝장개발대회",
+            "point": 400
         },
         {
             "order": 8,
-            "title": "Cat Cat Cat Cat",
-            "author": "KIHOKIHO"
+            "title": "친환경 비누",
+            "description": "얼룩 및 개인 위생을 관리할 수 있고 친환경 소재로 만든 비누 상품입니다.",
+            "author": "Team EcoEgo",
+            "point": 600
         }
     ]
 }

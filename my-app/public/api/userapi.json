@@ -2,38 +2,59 @@
     "UserList": [
         {
             "order": 1,
-            "id": "nopaper",
+            "id": "KotlinMaster",
             "passoword": "1234",
             "email": "asd@gmail.com",
-            "point": 200
+            "point": 2000
         },
         {
             "order": 2,
-            "id": "CHOCO",
+            "id": "EcoDriver",
             "passoword": "1234",
             "email": "asd@gmail.com",
-            "point": 300
+            "point": 1700
         },
         {
             "order": 3,
-            "id": "Boom-Boom",
+            "id": "숲속지킴이",
             "passoword": "1234",
             "email": "asd@gmail.com",
-            "point": 180
+            "point": 1200
         },
         {
             "order": 4,
-            "id": "Cat Cat",
+            "id": "WebMaster",
+            "passoword": "1234",
+            "email": "asd@gmail.com",
+            "point": 900
+        },
+        {
+            "order": 5,
+            "id": "커비는귀엽다",
+            "passoword": "1234",
+            "email": "asd@gmail.com",
+            "point": 850
+        },
+        {
+            "order": 6,
+            "id": "구름같이살아가리",
             "passoword": "1234",
             "email": "asd@gmail.com",
             "point": 700
         },
         {
-            "order": 5,
-            "id": "Funny DIY",
+            "order": 7,
+            "id": "직장인환경운동가",
             "passoword": "1234",
             "email": "asd@gmail.com",
-            "point": 80
+            "point": 500
+        },
+        {
+            "order": 8,
+            "id": "ISAVEMYSKY",
+            "passoword": "1234",
+            "email": "asd@gmail.com",
+            "point": 300
         }
     ]
 }

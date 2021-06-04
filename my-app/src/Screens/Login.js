@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import {PrepareLogin} from "../Components/partial/BtnTimeToPrepare";
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -143,7 +143,7 @@ class Login extends Component {
                             <label htmlFor="user_pw" className="form__label">PW</label>
                         </div>
                         <div class={"btn__field"}>
-                            <a href={"/"}>
+                            <a href={"/"} onClick={PrepareLogin}>
                                 <button type="button" className="btn">login</button>
                             </a>
                             <a href={"/signup"}>
