@@ -57,20 +57,20 @@ function Analysis(props) {
                 <AnalysisCarChart />
                 <AnalysisContent>
                     <AnalysisContext>
-                        <div>평균 주행 속도 : ~ (km/h)</div>
-                        <div>최대 속도 : ~ (km/h)</div>
-                        <div>최저 속도 : ~ (km/h)</div>
-                        <div>총 운행 시간: ~ (hour)</div>
+                        <div>평균 주행 속도 : 75 (km/h)</div>
+                        <div>최대 속도 : 126 (km/h)</div>
+                        <div>최저 속도 : 33 (km/h)</div>
+                        <div>총 운행 시간: 780 (hour)</div>
                     </AnalysisContext>
                     <AnalysisContext>
-                        <div>급정거 횟수 : ~ (회)</div>
-                        <div>급출발 횟수 : ~ (회)</div>
-                        <div>에코시스템 등급: ~ (급)</div>
-                        <div>보유 포인트: ~ (point)</div>
+                        <div>급정거 횟수 : 20 (회)</div>
+                        <div>급출발 횟수 : 12 (회)</div>
+                        <div>에코시스템 등급: 3 (급)</div>
+                        <div>보유 포인트: 1200 (point)</div>
                     </AnalysisContext>
                 </AnalysisContent>
                 <Topic>[홍길동]님의 에코시스템 실천으로</Topic>
-                <Topic>소나무 ~ (그루)를 살리셨습니다!</Topic>
+                <Topic>소나무 3 (그루)를 살리셨습니다!</Topic>
             </AnalysisLayout>
         </AnalysisContainer>
     );
